@@ -1,0 +1,16 @@
+
+--iverilog
+1. iverilog compile mutiple files , below demo the test_tb use one module which defined in test.v
+iverilog -o "test_tb.vvp" test_tb.v test.v
+
+2. iverilog compile one file
+iverilog -o "compile_demo.vvp" compile_demo.v
+
+--vvp
+after generate .vvp then use the this cmd generate vcd file , and then can use plugin WaveTrace to view the vcd
+fully compile have these files
+    -compile_demo.v
+    -compile_demo.vcd
+    -compile_demo.vvp
+
+vvp compile_demo.vvp
